@@ -3,8 +3,7 @@
  * 一定时间段内没有再触发事件，事件处理函数才会执行一次
  */
 
-exports.debounce = (func, t) => {
-  console.log(typeof func)
+export const debounce = (func, t) => {
   // if (typeof func !== "function")
   //   throw new Error("not a funciton");
   const time = t || 1000;
@@ -30,7 +29,7 @@ exports.debounce = (func, t) => {
  * 节流函数
  * 一定时间内只执行一次
  */
-exports.throttle = (func, t) => {
+export const throttle = (func, t) => {
   const _time = t || 1000;
   let _timer = null;
 
